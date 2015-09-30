@@ -16,15 +16,22 @@ nav .navbar {
 	margin-bottom: 50px;
 }
 .navbar {
-
+	min-height: 100px;
+	margin-bottom: 0;
 }
 
 nav  {
-	height: 100px;
+	height: auto;
+	min-height: 100px;
 }
 
 .navbar .navbar-brand {
 	color: #fff;
+	height: auto;
+}
+
+.navbar-fixed-top {
+	position: static;
 }
 
 .navbar .navbar-brand .subhead {
@@ -53,8 +60,14 @@ ul.nav.navbar-nav.navbar-right {
 	font-size: 18px;
 }
 
+@media only screen and (max-width: 760px){
+	.navbar-brand {
+		padding: 15px 0 0;
+	}
+}
+
 #featured {
-	margin-top: 100px;
+	margin-top: 0;
 }
 
 h1 {
